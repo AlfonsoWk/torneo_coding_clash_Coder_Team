@@ -17,6 +17,22 @@ tipo: El tipo de guarda
 patron: El patrón a utilizar
 La función debe retornar una cadena de texto de N caracteres, que indiquen los colores de los cuadraditos de la guarda. */
 
+let n = Number(prompt('Ingrese el número de cuadraditos que quieres bordar: '));
+let tipo = prompt('Elija el tipo de guardia (normal o espejada): ').toLowerCase();
+let patron = String(prompt('Escribí el color de los cuadraditos por favor: ').toLowerCase());
+
 function formaguarda(n, tipo, patron) {
-    // tu código aca
+
+
+while (isNaN(n)) {
+    n = Number(prompt('El valor que ingresaste no es un valor numerico, por favor ingresa un número: '));
 }
+
+while (tipo != 'normal' && tipo != 'espejada') {
+    tipo = prompt('Tenes que ingresar normal o espejada: ');
+}
+
+
+}
+
+console.log(n, tipo, (patron.slice(1)));
